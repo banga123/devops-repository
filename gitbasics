@@ -13,3 +13,58 @@ git remote -v
 #Create branch through Local Repo
 
 git branch {branch-name}
+
+#Create branch & switch to That branch
+
+git checkout -b {branch-name}
+
+#Add the changes 
+
+git add .(or){file/folder-name}
+
+#Commit the changes(after add/change we need to commit the changes)
+
+git commit -m "Message"
+
+#Push the changes to remote Branch
+
+git push origin {branch-name}
+
+#If any changes made in the remote repository push will fail. Inorder to resolve use this commit-which will pull all the things in remote by avoiding changes
+
+ git pull origin {current-branch-name} --allow-unrelated-histories
+
+#Check the status of current branch
+
+ git status
+
+#After all the changes send files to remote
+
+ git push origin {branch-name/master}
+
+#To check the log of commits
+
+git log
+
+#To get log in oneline
+
+git log --oneline
+
+#To stash(stash means we are holding the commit to do it later, we decided to change the current added file)
+
+ git stash
+
+#To revert back that stashed file
+
+ git stash pop
+
+======================================
+Pending portions
+
+Revert Back commit
+Reset types
+Git Rebase
+Merge
+Pull request
+Git stash
+

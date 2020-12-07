@@ -8,5 +8,7 @@ git remote add origin https://github.com/USERNAME/REPONAME.git
 
 #Verify remote repository
 
+New line
+
 git remote -v
 

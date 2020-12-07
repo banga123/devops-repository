@@ -54,17 +54,40 @@ git log --oneline
 
  git stash
 
-#To revert back that stashed file
+#To go back that stashed file
 
  git stash pop
+
+#Revert a commit(undo or go back to previous commit)
+
+ git revert <sha1>|Previous commit id
+ git push 
+
+# Merge to a branch
+  git checkout branchName(destination)
+  git merge branchName(source)
+ -->GUI-setup pull request
+
+#Reset to any commit(soft)
+ git reset sha1/commitid
+
+#Reset to any commit & delete history of previous commit(hard)\
+ git reset --hard sha1/commitid
+
+#Show tree progression of log
+
+ git log --all --decorate --oneline --graph
 
 ======================================
 Pending portions
 
-Revert Back commit
+
 Reset types
 Git Rebase
-Merge
-Pull request
-Git stash
+Git Flow
+SourceTree/Alternatives
+
+
+
+
 
